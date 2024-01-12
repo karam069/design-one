@@ -1,0 +1,332 @@
+/* Start Varibles */
+
+:root{
+    --main-color: #10cab7;
+    --second-color: #2c4755;
+    --section-padding:60px;
+    --section-background: #F6F6F6 ;
+    --grid-column: grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+/* End Varibles */
+
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container{
+    padding-left:15px;
+    padding-right: 15px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+@media (min-width: 767px) {
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 1140px;
+    }
+}
+
+/* Start Header */ 
+
+.header{
+    padding:20px;
+}
+.logo{
+    width: 80px;
+}
+.nav li{
+    display:inline;
+    padding: 15px;
+}
+.nav ul{
+    margin-left:800px;
+    margin-top: -30px;
+}
+.nav li a{
+    text-decoration: none;
+    color:#2c4755
+}
+.nav li a:hover {
+    color:var(--main-color);
+}
+#p1{
+    margin-top:0px
+}
+@media (max-width:767px){
+    .header{
+        padding:2px;
+    }
+    .nav ul{
+        margin-left:80px;
+        margin-top: -30px;
+    }
+}
+/* End Header */
+
+/* Start Landing */
+
+.landing{
+    background-image: url(../images/sunset-mountain-silhouette-crescent-moon-night-time-5032x3145-4997.jpg);
+    background-size:cover;height: calc(100vh - 64px);
+    position: relative;
+    background-size:cover;
+}
+
+.landing .txt {
+    position: absolute;
+    text-align: center;
+    max-width: 100%;
+    width:320px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.landing .txt h1{
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0;
+}
+
+.landing .txt p{
+    font-size:19px;
+    line-height: 1.9;
+}
+
+/* End Of The Landing */
+
+/* Features Start */
+
+.feauters{
+    background-color: #F6F6F6;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.feauters .container{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+.feauters .feat-cont{
+    padding:20px;
+    text-align: center;
+}
+.feauters .feat-cont i{
+    color:var(--main-color);
+}
+.feauters .feat-cont h3{
+    font-weight: 800;
+    margin: 30 0;
+}
+.feauters .feat-cont p{
+    line-height: 1.0;
+    color:#777;
+    font-size: 17px;
+}
+
+/* End feauters */
+
+/* Start Serviecs */
+
+.serviecs{
+   padding-top:60px;
+   padding-bottom: 60px;
+}
+.serviecs .content{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 30px;
+    margin-top:100px;
+}
+.serviecs .content .srv{
+    display:flex;
+    margin-bottom: 40px;
+}
+@media (max-width:767px){
+    .serviecs .content .srv{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.serviecs .content .srv i{
+    color:var(--main-color);
+    flex-basis: 60px;
+}
+.serviecs .content .srv .text {
+    flex: 1;
+}
+.serviecs .content .srv .text h3{
+    margin: 0 0 20px;
+}
+.serviecs .text-h{
+    color:#ebeced;
+    font-size: 100px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -3px;
+    margin: 0;
+}
+.serviecs .text-h + p{
+    text-align: center;
+    margin: 0 0 0 ;
+    font-size: 20px;
+    color:#797979
+}
+@media (max-width:767){
+    .serviecs .text-h{
+        font-size: 60px;
+    }
+    .serviecs .text-h + p{
+        margin-top:-10px;
+    }
+}
+
+/* End Services */
+
+/* Portfolio Start */
+
+.portfolio{
+    background-color: var(--section-background);
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding)
+}
+.portfolio .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap:30px;
+    margin-top:80px;   
+}
+.portfolio .images-port{
+    background-color: rgb(243, 240, 240);
+}
+.portfolio .images-port img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+.portfolio .images-port .info-txt{
+    padding:20px;
+}
+.portfolio .images-port img:hover{
+    transform: scale(0.9);
+}
+.portfolio .info-txt h3{
+    margin: 0;
+}
+.portfolio .info-txt p{
+    color:#777;
+    line-height: 1.6;
+}
+#img3{
+    width:700px;
+    height:200px;
+}
+/* End Of Portfolio */
+
+/* Start About Section */
+
+.about{
+    padding-top: var(--section-padding);
+    padding-bottom:30px;
+}
+.main-content{
+    margin-top:100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media (max-width:991px){
+    .about .main-content{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.about .main-content .images{
+    position: relative;
+    width:250px;
+    height:359px;
+}
+@media (max-width: 991px){
+    .about .images{
+        margin: 0 auto 60px;
+        border-radius: 10px;
+    }
+}
+.about .images img{
+    max-width: 110%;
+}
+.text-about{
+    flex-basis: calc(100% - 500px);
+}
+.text-about p:first-of-type{
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+.text-about hr{
+    display: inline-block;
+    width:50%;
+    border-color: var(--main-color);
+}
+/* End Of About Section */
+
+/* Contact Us Section */
+
+.contact{
+    background-color: var(--section-background);
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.contact .input{
+    text-align: center;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.contact .input .paragraph{
+    color: var(--second-color);
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-top: -5px;
+}
+.contact .input .link{
+    color:var(--main-color);
+    font-size: 40px;
+    font-weight: 800;
+    display: block;
+    text-decoration: none;
+}
+
+/* End Contact Us */
+
+/* Fotter */
+
+.footer{
+    background-color: var(--second-color);
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: -70px
+}
+.footer span{
+    font-weight: bold;
+    color: var(--main-color);
+}
